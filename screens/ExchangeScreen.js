@@ -87,22 +87,10 @@ export default class ExchangeScreen extends Component{
                 </TouchableOpacity>
                 </KeyboardAvoidingView>
             </View>
-            
 
-            this.state.exchange.length === 0
-            ?(
-              <View style={styles.subContainer}>
-                <Text style={{ fontSize: 20}}>List Of All Requested Exchanges</Text>
-              </View>
+        
+
             )
-            :(
-              <FlatList
-                keyExtractor={this.keyExtractor}
-                data={this.state.requestedBooksList}
-                renderItem={this.renderItem}
-              />
-            
-        )
     }
 }
 
